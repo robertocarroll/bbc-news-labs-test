@@ -1,4 +1,3 @@
-
 var fs = require("fs");
 var d3 = require("d3");
 
@@ -20,7 +19,7 @@ fs.readFile('./data/article-Devices.csv', 'utf8', function (err, data) {
 
     bestMobileTimesString = d3.csvFormat(bestMobileTimes);
 
-    fs.writeFile("./output/good-mobile-times.csv", bestMobileTimesString, function(err) {
+    fs.writeFile("./output/q2-good-mobile-times.csv", bestMobileTimesString, function(err) {
       console.log("Q2 file written");
     });
 });
